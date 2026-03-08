@@ -2,9 +2,8 @@ class Sepatu {
     String merk;
     double harga;
     int stok;
-    Kategori kategori; // Relasi antar class untuk poin nilai tambah
+    Kategori kategori;
 
-    // Sesuai modul: Constructor dengan 4 argumen [cite: 147]
     Sepatu(String merk, double harga, int stok, Kategori kategori) {
         this.merk = merk;
         this.harga = harga;
@@ -12,8 +11,13 @@ class Sepatu {
         this.kategori = kategori;
     }
 
-    // Sesuai modul: Method tanpa nilai kembalian (void) [cite: 43, 44]
-    void tampilkan() {
-        System.out.println("Merk: " + merk + " | Harga: " + harga + " | Stok: " + stok + " | Kat: " + kategori.namaKategori);
+    void tampilkan(int no) {
+
+        System.out.println("Nomor    : " + no);
+        System.out.println("Merk     : " + merk);
+        System.out.println("Kategori : " + kategori.namaKategori);
+        System.out.println("Stok     : " + stok);
+        System.out.println("Harga    : Rp " + (int) harga);
+        System.out.println("---------------------------------------");
     }
 }

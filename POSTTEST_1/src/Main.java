@@ -10,19 +10,23 @@ void main() {
         System.out.println("\n=======================================");
         System.out.println("  SISTEM PENJUALAN SEPATU OLAHRAGA  ");
         System.out.println("=======================================");
-        System.out.println("1. Tambah Stok ");
-        System.out.println("2. Lihat Semua Sepatu ");
-        System.out.println("3. Ubah Data Sepatu ");
+        System.out.println("1. Tambah Sepatu");
+        System.out.println("2. Lihat Semua Sepatu");
+        System.out.println("3. Ubah Data Sepatu");
         System.out.println("4. Hapus Sepatu ");
         System.out.println("5. Keluar Program");
+        System.out.println("=======================================");
         System.out.print("Pilih Menu: ");
         pilihan = sc.nextInt();
         sc.nextLine();
 
         switch (pilihan) {
             case 1 -> {
-                System.out.println("\n--- Pilih Merk Sepatu ---");
+                System.out.println("\n=======================================");
+                System.out.println("          PILIH MERK SEPATU          ");
+                System.out.println("=======================================");
                 System.out.println("1. Adidas\n2. Nike\n3. Puma\n4. Ortuseight\n5. Specs");
+                System.out.println("=======================================");
                 System.out.print("Pilih (1-5): ");
                 int pilihanMerk = sc.nextInt();
 
@@ -38,8 +42,11 @@ void main() {
                     break;
                 }
 
-                System.out.println("\n--- Pilih Kategori ---");
+                System.out.println("\n=======================================");
+                System.out.println("          PILIH KATEGORI             ");
+                System.out.println("=======================================");
                 System.out.println("1. Running\n2. Football\n3. Futsal");
+                System.out.println("=======================================");
                 System.out.print("Pilih (1-3): ");
                 int pilihanKategori = sc.nextInt();
 
@@ -58,38 +65,62 @@ void main() {
                 sc.nextLine();
 
                 dataSepatu.add(new Sepatu(m, h, s, new Kategori(k)));
-                System.out.println("Data " + m + " berhasil ditambahkan!");
+                System.out.println("Produk Sepatu " + m + " berhasil ditambahkan!");
             }
             case 2 -> {
-                System.out.println("\n--- DAFTAR STOK SEPATU ---");
+                System.out.println("\n=======================================");
+                System.out.println("          DAFTAR STOK SEPATU         ");
+                System.out.println("=======================================");
                 if (dataSepatu.isEmpty()) {
-                    System.out.println("Stok kosong.");
+                    System.out.println("Sepatu kosong.");
                 } else {
                     for (int i = 0; i < dataSepatu.size(); i++) {
-                        System.out.print((i + 1) + ". ");
-                        dataSepatu.get(i).tampilkan();
+                        dataSepatu.get(i).tampilkan(i + 1);
+                    }
+                }
+                System.out.println("=======================================");
+            }
+            case 3 -> {
+                if (dataSepatu.isEmpty()) {
+                    System.out.println("Daftar kosong, tidak ada data untuk diubah.");
+                } else {
+                    System.out.println("\n=======================================");
+                    System.out.println("       PILIH DATA UNTUK DIUBAH       ");
+                    System.out.println("=======================================");
+                    for (int i = 0; i < dataSepatu.size(); i++) {
+                        dataSepatu.get(i).tampilkan(i + 1);
+                    }
+                    System.out.println("=======================================");
+                    System.out.print("Pilih nomor data yang ingin diubah harganya: ");
+                    int idx = sc.nextInt() - 1;
+                    if (idx >= 0 && idx < dataSepatu.size()) {
+                        System.out.print("Masukkan Harga Baru: ");
+                        dataSepatu.get(idx).harga = sc.nextDouble();
+                        System.out.println("Harga berhasil diperbarui!");
+                    } else {
+                        System.out.println("Pilihan tidak valid!");
                     }
                 }
             }
-            case 3 -> {
-                System.out.print("Pilih nomor data yang ingin diubah harganya: ");
-                int idx = sc.nextInt() - 1;
-                if (idx >= 0 && idx < dataSepatu.size()) {
-                    System.out.print("Masukkan Harga Baru: ");
-                    dataSepatu.get(idx).harga = sc.nextDouble();
-                    System.out.println("Harga berhasil diperbarui!");
-                } else {
-                    System.out.println("Pilihan tidak valid!");
-                }
-            }
             case 4 -> {
-                System.out.print("Pilih nomor data yang ingin dihapus: ");
-                int idx = sc.nextInt() - 1;
-                if (idx >= 0 && idx < dataSepatu.size()) {
-                    dataSepatu.remove(idx);
-                    System.out.println("Data berhasil dihapus!");
+                if (dataSepatu.isEmpty()) {
+                    System.out.println("Daftar kosong, tidak ada data untuk dihapus.");
                 } else {
-                    System.out.println("Pilihan tidak valid!");
+                    System.out.println("\n=======================================");
+                    System.out.println("      PILIH DATA UNTUK DIHAPUS       ");
+                    System.out.println("=======================================");
+                    for (int i = 0; i < dataSepatu.size(); i++) {
+                        dataSepatu.get(i).tampilkan(i + 1);
+                    }
+                    System.out.println("=======================================");
+                    System.out.print("Pilih nomor data yang ingin dihapus: ");
+                    int idx = sc.nextInt() - 1;
+                    if (idx >= 0 && idx < dataSepatu.size()) {
+                        dataSepatu.remove(idx);
+                        System.out.println("Data berhasil dihapus!");
+                    } else {
+                        System.out.println("Pilihan tidak valid!");
+                    }
                 }
             }
             case 5 -> System.out.println("Keluar dari program. Terima kasih!");
