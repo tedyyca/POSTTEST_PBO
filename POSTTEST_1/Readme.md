@@ -21,7 +21,7 @@ Semuanya disimpen pake **ArrayList**, jadi datanya dinamis banget!
 2. **Lihat Semua Sepatu**: Menampilkan seluruh daftar sepatu yang tersedia beserta detail harga, stok, dan kategorinya.
 3. **Ubah Data Sepatu**: Memperbarui informasi merk, kategori, harga, dan stok sepatu pada daftar yang sudah ada berdasarkan nomor urut.
 4. **Hapus Sepatu**: Menghapus data sepatu secara permanen dari daftar stok dengan menginput nomor pada tabel stok sepatu.
-5. **Keluar Program**: Menghentikan eksekusi program secara aman.
+5. **Keluar Program**: Programnya selesai.
 
 ---
 
