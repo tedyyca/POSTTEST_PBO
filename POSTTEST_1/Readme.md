@@ -21,8 +21,6 @@ Semuanya disimpen pake **ArrayList**, jadi datanya dinamis banget!
 2. **Lihat Semua Sepatu**: Menampilkan seluruh daftar sepatu yang tersedia beserta detail harga, stok, dan kategorinya.
 3. **Ubah Data Sepatu**: Memperbarui informasi merk, kategori, harga, dan stok sepatu pada daftar yang sudah ada berdasarkan nomor urut.
 4. **Hapus Sepatu**: Menghapus data sepatu secara permanen dari daftar stok dengan menginput nomor pada tabel stok sepatu.
-5. **Keluar Program**: Menghentikan eksekusi program secara aman.
-
 ---
 
 ## Berikut Screenshot fitur-fitur yang ada
@@ -34,7 +32,7 @@ Ini adalah tampilan awal buat milih fitur-fitur yang ada di program:
 </div>
 
 ### ➕ **MENU TAMBAH DATA**
-Tampilan pas kita lagi asik masukin sepatu-sepatu baru ke gudang:
+Tampilan pas kita lagi asik nambahin data sepatu:
 <div align="left">
   <img src="ssfitur/sstambah1.png" width="500">
   <br><br>
