@@ -1,33 +1,49 @@
 # Laporan Posttest 1 - Sistem Penjualan Sepatu Olahraga
 
-## Identitas
-* **Nama**: [M.TEDY AZHARI]
-* **NIM**: 2409106003
-* **Judul Program**: Sistem Penjualan Sepatu Olahraga
+### Nama: M.TEDY AZHARI
+### NIM: 2409106003
+### Kelas: A1'24
+
+
 
 ## Deskripsi Program
-Program ini adalah aplikasi manajemen stok sepatu olahraga berbasis CLI (Command Line Interface). Program ini mengelola data sepatu menggunakan ArrayList yang bersifat dinamis, sehingga pengguna dapat menambah, melihat, mengubah, dan menghapus data stok dengan mudah selama program berjalan.
+## Ini tuh program apa sihh?
+Jadi, program ini tuh gunanya buat ngatur stok sepatu olahraga. 
+Kita bisa nambahin data sepatu baru, ngeliat daftar sepatu yang udah ada,
+trus bisa ngedit (kalo ada typo atau harga naik)
+, dan bisa ngehapus data kalo sepatunya udah laku terjual.
+Semuanya disimpen pake **ArrayList**, jadi datanya dinamis banget!
 
 ## Fitur Utama
-1. **Tambah Stok (Create)**: Memasukkan data sepatu baru dengan sistem pilihan merk (1-5) dan kategori (1-3) untuk memastikan akurasi data.
-2. **Lihat Semua Sepatu (Read)**: Menampilkan seluruh daftar sepatu yang tersedia beserta detail harga, stok, dan kategorinya.
-3. **Ubah Data Sepatu (Update)**: Memperbarui informasi harga sepatu pada daftar yang sudah ada berdasarkan nomor urut.
-4. **Hapus Sepatu (Delete)**: Menghapus data sepatu secara permanen dari daftar stok.
-5. **Exit**: Menghentikan eksekusi program secara aman.
+1. **Tambah Stok Sepatu**: Memasukkan data sepatu baru dengan sistem pilihan merk (1-5) dan kategori (1-3) .
+2. **Lihat Semua Sepatu**: Menampilkan seluruh daftar sepatu yang tersedia beserta detail harga, stok, dan kategorinya.
+3. **Ubah Data Sepatu**: Memperbarui informasi merk, kategori,harga, dan stok sepatu pada daftar yang sudah ada berdasarkan nomor urut.
+4. **Hapus Sepatu**: Menghapus data sepatu secara permanen dari daftar stok dengan menginput nomor pada tabel stok sepatu.
+5. **Keluar Program**: Menghentikan eksekusi program secara aman.
 
-## Output Program (Screenshot)
+##  Berikut Screenshot fitur-fitur yang ada
+### 🏠 MENU UTAMA
+Ini adalah tampilan awal buat milih fitur-fitur yang ada di program:
+![Menu Utama](ssfitur/ssmenuutama.png)
 
-### Tambah Data Sepatu
-![Tambah Data](ssfitur/sstambah.png)
+### ➕ MENU TAMBAH DATA
+Tampilan pas kita lagi asik masukin sepatu-sepatu baru ke gudang
+:
+![Menu Tambah](ssfitur/sstambah1.png)
+![Menu Tambah](ssfitur/sstambah2.png)
 
-### Tampilan Daftar Sepatu
-![Lihat Data](ssfitur/ssread.png)
+### 📋 MENU TAMPILKAN DATA
+Nampilin semua stok sepatu:
+![Menu Tampilkan](ssfitur/tampilkansepatu.png)
 
-### Update Harga Sepatu
-![Update Data](ssfitur/ssupdate.png)
+### ✏️ MENU EDIT DATA
+Kalo ada salah input, tinggal sat-set diedit lewat sini:
+![Menu Edit](ssfitur/ssedit1.png)
+![Menu Edit](ssfitur/ssedit2.png)
 
-### Hapus Data Sepatu
-![Hapus Data](ssfitur/ssdelete.png)
+### 🗑️ MENU DELETE DATA
+Kalo udh ga butuh, data yang lama hapus aja:
+![Menu Delete](ssfitur/sshapus1.png)
 
 ---
-*Laporan ini dibuat untuk memenuhi tugas Posttest 1 mata kuliah Pemrograman Berorientasi Objek.*
+*Laporan POSTTEST 1 Pemrograman Berorientasi Objek.*

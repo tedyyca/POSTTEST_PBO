@@ -91,12 +91,49 @@ void main() {
                         dataSepatu.get(i).tampilkan(i + 1);
                     }
                     System.out.println("=======================================");
-                    System.out.print("Pilih nomor data yang ingin diubah harganya: ");
+                    System.out.print("Pilih nomor data yang ingin diubah: ");
                     int idx = sc.nextInt() - 1;
+                    sc.nextLine(); // Membersihkan buffer
+
                     if (idx >= 0 && idx < dataSepatu.size()) {
-                        System.out.print("Masukkan Harga Baru: ");
-                        dataSepatu.get(idx).harga = sc.nextDouble();
-                        System.out.println("Harga berhasil diperbarui!");
+                        // Proses Input Data Baru
+                        System.out.println("\n--- Masukkan Data Baru ---");
+                        System.out.println("1. Adidas\n2. Nike\n3. Puma\n4. Ortuseight\n5. Specs");
+                        System.out.print("Pilih Merk Baru (1-5): ");
+                        int pilihanMerk = sc.nextInt();
+
+                        String m = "";
+                        if (pilihanMerk == 1) m = "Adidas";
+                        else if (pilihanMerk == 2) m = "Nike";
+                        else if (pilihanMerk == 3) m = "Puma";
+                        else if (pilihanMerk == 4) m = "Ortuseight";
+                        else if (pilihanMerk == 5) m = "Specs";
+
+                        System.out.println("1. Running\n2. Football\n3. Futsal");
+                        System.out.print("Pilih Kategori Baru (1-3): ");
+                        int pilihanKategori = sc.nextInt();
+
+                        String k = "";
+                        if (pilihanKategori == 1) k = "Running";
+                        else if (pilihanKategori == 2) k = "Football";
+                        else if (pilihanKategori == 3) k = "Futsal";
+
+                        if (m.equals("") || k.equals("")) {
+                            System.out.println("Input tidak valid, perubahan dibatalkan!");
+                        } else {
+                            System.out.print("Masukkan Harga Baru: "); double h = sc.nextDouble();
+                            System.out.print("Masukkan Stok Baru : "); int s = sc.nextInt();
+                            sc.nextLine();
+
+
+                            Sepatu spt = dataSepatu.get(idx);
+                            spt.merk = m;
+                            spt.kategori.namaKategori = k;
+                            spt.harga = h;
+                            spt.stok = s;
+
+                            System.out.println("Data nomor " + (idx + 1) + " berhasil diperbarui!");
+                        }
                     } else {
                         System.out.println("Pilihan tidak valid!");
                     }
