@@ -92,6 +92,3 @@ Kalo udh ga butuh, data yang lama hapus aja:
 
 ---
 *Laporan POSTTEST 1 Pemrograman Berorientasi Objek.*
-
----
-*Laporan POSTTEST 1 Pemrograman Berorientasi Objek.*
