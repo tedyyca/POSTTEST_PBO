@@ -62,8 +62,6 @@ Penerapan **Superclass** `Sepatu` yang diturunkan ke 3 **Subclass** spesifik:
 
 ### 📋 **MENU TAMPILKAN DATA**
 <div align="left">
-  <img src="ssfitur/tampilkansepatu.png" width="500">
-  <br><br>
   <img src="ssfitur/tampilandatabaru.png" width="500">
 </div>
 
