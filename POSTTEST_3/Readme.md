@@ -1,4 +1,4 @@
-# Laporan Posttest 3 - Sistem Penjualan Sepatu Olahraga
+# Laporan Posttest 3 - Sistem Penjualan Sepatu Olahraga 
 
 ### **Nama: M.TEDY AZHARI**
 ### **NIM: 2409106003**
@@ -24,54 +24,62 @@ Semuanya disimpen pake **ArrayList**, jadi datanya dinamis banget!
 
 ---
 
-## 🆕 Update Terbaru: Konsep Inheritance (Modul 4)
-Di update kali ini, programnya makin "pintar" karena sudah menerapkan **Inheritance (Pewarisan)**. Sekarang, setiap kategori sepatu punya ciri khas masing-masing yang nggak asal-asalan:
+## 🆕 Inheritance
+Penerapan **Superclass** `Sepatu` yang diturunkan ke 3 **Subclass** spesifik:
+* **SepatuLari**: Memiliki atribut unik `peruntukanLari` (Easy Run, Long Run, Recovery Run).
+* **SepatuBola**: Memiliki atribut unik `jenisPul` (FG, SG, AG).
+* **SepatuFutsal**: Memiliki atribut unik `tipeUpper` (Sintetis, Kulit Asli, Knit).
 
-*   **Sepatu Lari**: Sekarang punya atribut **Peruntukan Jenis Lari** (Easy Run, Long Run, Recovery Run).
-*   **Sepatu Bola**: Sekarang punya atribut **Jenis Pul** (FG, SG, AG) buat nentuin jenis lapangan.
-*   **Sepatu Futsal**: Sekarang punya atribut **Tipe Upper** (Sintetis, Kulit Asli, Knit) buat kenyamanan kontrol bola.
+---
 
-Dengan konsep ini, kita pake satu induk (Superclass) yaitu `Sepatu`, lalu sifat-sifatnya diturunin ke anak-anaknya (Subclass) yaitu `SepatuLari`, `SepatuBola`, dan `SepatuFutsal`.
+## Fitur Baru
+1. **Method Overriding**: Modifikasi method `tampilkan()` pada tiap subclass untuk menampilkan atribut unik.
+2. **Polimorfisme**: Penyimpanan berbagai jenis objek subclass dalam satu `ArrayList<Sepatu>`.
+3. **Update Dinamis**: Penggunaan `instanceof` untuk mengubah atribut spesifik sesuai tipe objek.
+4. **Menu Pilihan Angka**: Input spesifik (1-3) untuk menjaga konsistensi data.
 
 ---
 
 ## Berikut Screenshot fitur-fitur yang ada
 
 ### 🏠 **MENU UTAMA**
-Ini adalah tampilan awal buat milih fitur-fitur yang ada di program:
 <div align="left">
   <img src="ssfitur/ssmenuutama.png" width="500">
 </div>
 
-### ➕ **MENU TAMBAH DATA (WITH INHERITANCE)**
-Sekarang pas nambah data, kita bisa milih spesifikasi unik tiap jenis sepatu menggunakan menu angka:
+### ➕ **MENU TAMBAH DATA**
 <div align="left">
-  <img src="ssfitur/jenislari.png" width="250">
-  <img src="ssfitur/jenispul.png" width="250">
-  <img src="ssfitur/jenisupper.png" width="250">
+  <img src="ssfitur/sstambah1.png" width="500">
+  <br><br>
+  <img src="ssfitur/sstambah2.png" width="500">
+  <br><br>
+  <img src="ssfitur/jenislari.png" width="500">
+  <br><br>
+  <img src="ssfitur/jenispul.png" width="500">
+  <br><br>
+  <img src="ssfitur/jenisupper.png" width="500">
 </div>
 
-### 📋 **MENU TAMPILKAN DATA TERBARU**
-Daftar stok sekarang lebih detail nampilin spek khusus tiap sepatu berkat polimorfisme:
+### 📋 **MENU TAMPILKAN DATA**
 <div align="left">
+  <img src="ssfitur/tampilkansepatu.png" width="500">
+  <br><br>
   <img src="ssfitur/tampilandatabaru.png" width="500">
 </div>
 
-### ✏️ **MENU EDIT DATA (TOTAL UPDATE)**
-Kalo ada salah input, sekarang bisa edit semuanya termasuk atribut uniknya:
+### ✏️ **MENU EDIT DATA**
 <div align="left">
   <img src="ssfitur/ssedit1.png" width="500">
+  <br><br>
+  <img src="ssfitur/ssedit2.png" width="500">
 </div>
 
 ### 🗑️ **MENU DELETE DATA**
-Kalo udh ga butuh, data yang lama hapus aja:
 <div align="left">
   <img src="ssfitur/sshapus1.png" width="500">
 </div>
 
 ### ⚠️ **INPUT NEGATIF (VALIDASI SETTER)**
-Tampilan kalo input harga negatif,
-program bakal nolak dan minta input ulang:
 <div align="left">
   <img src="ssfitur/ssnegatif.png" width="500">
 </div>
