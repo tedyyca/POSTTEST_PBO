@@ -1,4 +1,4 @@
-# Laporan Posttest 3 - Sistem Penjualan Sepatu Olahraga (Inheritance)
+# Laporan Posttest 3 - Sistem Penjualan Sepatu Olahraga
 
 ### **Nama: M.TEDY AZHARI**
 ### **NIM: 2409106003**
