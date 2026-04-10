@@ -27,7 +27,7 @@ public class Main {
                 case 1 -> {
                     System.out.println("\n--- Input Data Sepatu ---");
 
-                    // FITUR BARU: Pilihan Merk dengan Loop
+
                     String m = "";
                     while (true) {
                         System.out.println("Pilih Merk:");
